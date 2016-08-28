@@ -64,3 +64,5 @@ If, for any reason, your text required the _hash_ symbol (<code>**#**</code>) ap
 </tr>
 </tbody>
 </table>
+
+🔙 [Return to the Table of Contents](README.md#toc)
