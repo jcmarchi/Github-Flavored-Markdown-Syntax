@@ -68,7 +68,7 @@ Available Languages for the language block: https://github.com/github/linguist/b
 
 Emoji Unicode Table:
 http://apps.timwhitlock.info/emoji/tables/unicode
-&#x2702
+&#x2702;
 
 	
 In case this may be helpful for someone who just needs to show colors rather than output, as a hackish workaround (and FYI), since Github supports Unicode numeric character references (and HTML entities), you could try colored Unicode symbols, though it depends on the font rendering them in color (as it happens to be appearing for me on Windows 10 at least):
