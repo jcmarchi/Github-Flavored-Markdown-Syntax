@@ -1,8 +1,8 @@
 # Github Flavored Markdown Syntax #
-_The unofficial cheat sheet for the .MD files_
+_The unofficial cheat sheet for the **.md** files_
 ------
 
-GitHub uses its own unique render to display .MD files in your Internet Browser of choice. Commonly known as "GitHub Flavored Markdown," or GFM, it is used across the system to render **.md** files (A.K.A. "_documents_"), whikch are used in wiki pgaes, projects documens, issues, comments, and pull requests. 
+GitHub uses its own unique render to display **.md** files in your Internet Browser of choice. Commonly known as "GitHub Flavored Markdown," or GFM, it is used across the system to render **.md** files (A.K.A. "_documents_"), whikch are used in wiki pgaes, projects documens, issues, comments, and pull requests. 
 
 The GFM rendering process differs from Standard Markdown (SM) in a few significant ways. It also adds few key functionalities and adjust the render tailoring it for Github usage purposes. You can lear more about it at <a href="https://github.com/github/markup#markups" target="_blank">Github Markups</a>. 
 
