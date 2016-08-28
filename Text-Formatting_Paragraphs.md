@@ -55,7 +55,7 @@ in bold!
 This is another paragraph 
 that should also be in bold!**
      
-As you can see, the bold element (\*\*) was not rendered, thus it got exposed. To prevent such problem, make sure you properly close the _formatting elements_ if they are to existe all the way to the end of the paragraph.
+As you can see the paragraph was rendered correctly but not the bold element (\*\*), which got exposed. To prevent such problem, make sure you properly close the _formatting elements_ if they are to existe all the way to the end of the paragraph.
 
 Here how it should be done:
 
