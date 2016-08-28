@@ -1,4 +1,4 @@
-# Github Flavored Markdown Syntax #
+# Github Flavored Markdown Syntax
 _The unofficial cheat sheet for the **.md** files_
 ------
 
@@ -14,30 +14,35 @@ I would say you should fell free to use Markup, HTML Tags or both at same time. 
 
 Express your freedom and have a great writting experience.
 
-Text Formatting
-    Line Breaks (concept)
-    Headers
-    Emphasis
-        Bold
-        Italic
-    Strikethrough
-    Highlighting
+## General Index
 
-Blocks Structures
-    Lists
-        Unordered
-        Ordered
-    Tables
-    Horizontal Rule
+### Text Formatting
+* Line Breaks (concept)
+* Headers
+* Emphasis
+ * Bold
+ * Italic
+* Strikethrough
+* Highlighting
 
-Links & References
-    Images
-    URL
 
-Advanced 
-    Inline code
-    Syntax highlighting
-    Task Lists
-    SHA references
-    Issue references within a repository
-    Emoji
+### Blocks Structures
+* Lists
+ * Unordered
+ * Ordered
+* Tables
+* Horizontal Rule
+
+
+### Links & References
+* Images
+* URL
+
+
+### Advanced or Exclusive GFM Formatting
+* Inline code
+* Syntax highlighting
+* Task Lists
+* SHA references
+* Issue references within a repository
+* Emoji
