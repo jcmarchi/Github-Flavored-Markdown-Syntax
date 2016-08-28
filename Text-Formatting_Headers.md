@@ -65,6 +65,6 @@ If, for any reason, your text required the _hash_ symbol (<code>**#**</code>) ap
 </tbody>
 </table>
 
-An interesting remark: You can use the equivalent **Markdown Syntax** of <code># Heading 1</code> or <code>## Heading 2</code> to create [Horizontal Rules].
+As an interesting remark, you can use the equivalent **Markdown Syntax** of <code># Heading 1</code> and/or <code>## Heading 2</code> to create [Horizontal Rules]().
 
 [🔙 Back to the **General Index**](README.md#general-index)
