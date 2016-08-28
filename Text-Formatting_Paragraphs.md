@@ -6,21 +6,19 @@ At Github a paragraph is simply one or more consecutive lines of text, separated
 
 A _blank line_ is any line that "_looks like a blank line_", regardless if it has no characters or if it is filled with spaces and/or tabs (or a mix of both). If the line "_looks like a blank line_", it will render by the GFM as a"_blank line_".
 
-In the opposite sense, if a line doesn't begin with a **Markdown character**, it is considered as a paragraph. 
-
 For instance, if you write:
 
      **This is 
      one single
      paragraph!**
 
-You will get:
+You will get a single paragraph:
 
 **This is 
 one single
 paragraph!**
 
-But, if you write 
+But, if you write:
 
      **This is 
      one single
@@ -29,7 +27,7 @@ But, if you write
      **This is 
      another paragraph!**
      
-You should get it right:
+You will get multiple paragraphs:
 
 **This is 
 one single
