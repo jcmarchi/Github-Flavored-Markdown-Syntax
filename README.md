@@ -18,7 +18,7 @@ Express your freedom and have a great writting experience.
 
 ### Text Formatting
 * Line Breaks (concept)
-* Headers
+* [Headers](Text-Formatting_Headers.md)
 * Emphasis
  * Bold
  * Italic
