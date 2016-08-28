@@ -1,19 +1,32 @@
 ## Text Formatting - Line Breaks and Paragraphs
 
-Currently GitLab renders line-breaks in markdown files as line-breaks. We propose to change this behaviour to conform to the markdown specification and only render line-breaks when you end a line with two or more spaces. Paragraphs will continue to be rendered as before; when the text is separated by one or more blank lines.
+At Github a paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. A blank line is any line that "_looks like a blank line_" (regardless if it really empty, with no characters, or filled with spaces, tabs, or a mix of them. If the line "_looks like a blank line_" it will be considered and rendered  as "_a blank line_" by the GFM).
 
-The above change will ensure that markdown files in projects will look the way you expect them to look. But GitLab has just one markdown engine to render GitLab Flavored Markdown. Since descriptions & comments in both issues & merge requests also use GitLab Flavored Markdown they will also show the new behaviour. We think this is preferable above introducing different behaviour and rendering code for different cases. Please let us know what you think.
-
-
-
-
-A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line -- a line containing nothing but spaces or tabs is considered blank.) Normal paragraphs should not be indented with spaces or tabs.
+.) Normal paragraphs should not be indented with spaces or tabs.
 
 The implication of the "one or more consecutive lines of text" rule is that Markdown supports "hard-wrapped" text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable Type's "Convert Line Breaks" option) which translate every line break character in a paragraph into a <br /> tag.
 
 When you do want to insert a <br /> break tag using Markdown, you end a line with two or more spaces, then type return.
 
 Yes, this takes a tad more effort to create a <br />, but a simplistic "every line break is a <br />" rule wouldn't work for Markdown. Markdown's email-style blockquoting and multi-paragraph list items work best -- and look better -- when you format them with hard breaks.
+
+      
+
+fvafvbadfsv
+adfbadfvb
+
+   dsfvbadfvadfvb
+   adfvbadfv
+   
+      asdfvafdsv
+      adsfvafdsv
+
+
+Currently GitLab renders line-breaks in markdown files as line-breaks. We propose to change this behaviour to conform to the markdown specification and only render line-breaks when you end a line with two or more spaces. Paragraphs will continue to be rendered as before; when the text is separated by one or more blank lines.
+
+The above change will ensure that markdown files in projects will look the way you expect them to look. But GitLab has just one markdown engine to render GitLab Flavored Markdown. Since descriptions & comments in both issues & merge requests also use GitLab Flavored Markdown they will also show the new behaviour. We think this is preferable above introducing different behaviour and rendering code for different cases. Please let us know what you think.
+
+
 
 
 Traditional Markdown requires a two-space to generate line breaks, while GFM line breaks are automatically generated wherever you add a line break on your text. 
