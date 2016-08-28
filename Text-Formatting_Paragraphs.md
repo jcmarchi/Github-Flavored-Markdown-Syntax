@@ -55,9 +55,9 @@ in bold!
 This is another paragraph 
 that should also be in bold!**
      
-As you can see the paragraph was rendered correctly but not the bold element (\*\*), which got exposed. To prevent such problem, make sure you properly close the _formatting elements_ if they are to existe all the way to the end of the paragraph.
+As you can see the paragraph was rendered correctly but not the bold element (<code>\*\*</code>), which got exposed. To prevent such problem, make sure you properly close the _formatting elements_ if they are to exist all the way to the end of the paragraph.
 
-Here how it should be done:
+Here how it is done right:
 
      **This is one single paragraph 
      in bold!**
@@ -65,7 +65,7 @@ Here how it should be done:
      This is another paragraph 
      that should also be in bold!**
      
-So you can get it right:
+So it can render correctly:
 
 **This is one single paragraph 
 in bold!**
