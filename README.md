@@ -46,6 +46,6 @@ Have fun.
 
 - - - 
 <sup>
-Except where otherwise noted, content on this document is licensed under a <b>Creative Commons Attribution 4.0</b> International license.<br />
+<i>Except where otherwise noted, content on this document is licensed under a <b>Creative Commons Attribution 4.0</b> International license.</i><br />
 Provided by <b>Julio Marchi</b>
 </sup>
