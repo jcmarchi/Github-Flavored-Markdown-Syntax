@@ -1,6 +1,123 @@
 ## Text Formatting - Line Breaks and Paragraphs
 
-At Github a paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. A blank line is any line that "_looks like a blank line_" (regardless if it really empty, with no characters, or filled with spaces, tabs, or a mix of them. If the line "_looks like a blank line_" it will be considered and rendered  as "_a blank line_" by the GFM).
+### Understanding Paragraphs
+
+At Github a paragraph is simply one or more consecutive lines of text, separated by one or more _blank lines_.  
+
+A _blank line_ is any line that "_looks like a blank line_", regardless if it has no characters or if it is filled with spaces and/or tabs (or a mix of both). If the line "_looks like a blank line_", it will render as "_a blank line_" by the GFM.
+
+In the opposite sense, if a line doesn't begin with a **Markdown character**, it is considered as a paragraph. 
+
+For instance, if you write:
+
+     **This is 
+     one single
+     paragraph!**
+
+You will get:
+
+**This is 
+one single
+paragraph!**
+
+But, if you write 
+
+     **This is 
+     one single
+     paragraph!**
+     
+     **This is 
+     another paragraph!**
+     
+You should get it right:
+
+**This is 
+one single
+paragraph!**
+     
+**This is 
+another paragraph!**
+
+*IMPORTANT:*  
+The _formatting elements_ won't translate from one paragraph to another. It means if you add a _paragraph break_ without any regard to the _formatting elements_, you will get a "_broken_" **Markdown** result.
+
+Here is an example:
+
+     **This is one single paragraph 
+     in bold! 
+     
+     This is another paragraph 
+     that should also be in bold!**
+     
+You will get:
+
+**This is one single paragraph 
+in bold! 
+     
+This is another paragraph 
+that should also be in bold!**
+     
+It happened because the bold element \*\* was not rendered, thus it got expopsed. To prevent such problems, make sure you properly close the _formatting elements_ if they are to existe allthe way to the end of a paragraph. Example:
+
+     **This is one single paragraph 
+     in bold!**
+     
+     This is another paragraph 
+     that should also be in bold!**
+     
+You will get:
+
+**This is one single paragraph 
+in bold**
+     
+This is another paragraph 
+that should also be in bold!**
+
+
+**Notice:** Subsequent _blak lines_ will not render as multiple blank lines, resulting in one single blank line.
+
+- - -
+
+### Understanding Line Breaks
+
+
+The paragraph end, however, can be a little bit more _tricky_ to visualize. At Github, based on the description above, a paragraph is considered terminated when it is immediately followed by a "_blank line_", or by a line beginning with a **Markdown character**.
+
+, or when it has two blank spaces as last characters (standard **Markdown**).
+
+This concept can confuse some people, thus lets explore it a bit for a better undetstanding.
+
+If your paragraph is written like this:
+
+    **Line 1** (terminated with no spaces)
+    **Line 2** (terminated with _two white-space_ characters)  
+    **Line 3** (terminated with no spaces)
+    **Line 4** (terminated with no spaces)
+
+It shour render like this:
+
+**Line 1** (terminated with no spaces)
+**Line 2** (terminated with _two white-space_ characters)  
+**Line 3** (terminated with no spaces)
+**Line 4** (terminated with no spaces)
+
+Notice how a _line break_ was enforced in between the lines **2** and **3**. It was result of the two _blank space_  characters added to the end of the lines **2**. 
+
+Originally Github didn't recognize this feature (which was defined in the **Markdown Standard**), but support for it has been added so Github would recognize and properly render _Markdown files_ created by other editors. 
+
+At Github _line break_ and _new paragraph_ concepts can be deceiving, but it is important to know the semantical differences if you want to write proper documentation. You can always separate two paragraphs in Github by adding a _blank line_ in between them, knowingly that those ARE to be interpreted as **two separated paragraphs**. I fyou want, instead, keep the semantical interpretation of a paragraph but break lines inside it, then you must terminater the line(s) with  _two white-space_ characters to enforce a correct _line break_.
+
+Technically is the same as use <code>&lt;p&gt;</code> and <code>&lt;p \\&gt;</code> in HTML.
+
+fundamentally to get the same visual effect the _two white-space_ characters at the end of the paragraph 
+
+
+
+
+Github itself will render a _line break_ in a paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.
+
+
+
 
 .) Normal paragraphs should not be indented with spaces or tabs.
 
