@@ -2,17 +2,21 @@
 _The unofficial cheat sheet for the **.md** files_
 ------
 
-GitHub uses its own unique render to display **.md** files in your Internet Browser of choice. Commonly known as "GitHub Flavored Markdown," or GFM, it is used across the system to render **.md** files (A.K.A. "_documents_"), which are used in wiki pages, project documents, issues tracking, comments, and pull requests. 
+Github uses its own version of **Markdown** to interpret and parse (**.md**) files, known as "GitHub Flavored Markdown" (GFM). It is available across the Github system wherever a _document_ is present: **wiki pages**, **project reference files** and **project descriptions**, **issues tracking**, **comments**, and **pull requests**. You can learn more about the GFM implementation at <a href="https://github.com/github/markup#markups" target="_blank">Github Markups</a>. 
 
-The GFM rendering process differs from Standard Markdown (SM) in a few significant ways. It also adds few key functionalities and adjust the render tailoring it for Github usage purposes. You can lear more about it at <a href="https://github.com/github/markup#markups" target="_blank">Github Markups</a>. 
+If you're not yet familiar with **Markdown**, take a look at some **Markdown Basics** (<a href="https://www.google.com/#newwindow=1&safe=off&q=%22Markdown+Basics%22+tutorials" target="_blank">search for it on Google</a>). There are great tutorials available. By knowing the basics about **Markdown** it will make a lot more sense why the GFM rendering process differs from the <a href="http://daringfireball.net/projects/markdown/" target="_blank">**Standard Markdown**</a>. Fundamentally, the GFM is tailored for Github to allow the _documents_ to serve to a higher purposed within Github scope other than simply disclose information. The GFM adds _key functionalities_ such as: **pull request integration**, **SHA-1 Conversion**, **task lists**, **emoji**, **named anchors**, **CDN caching for images**, **autolinking** etc. 
 
-If you're not already familiar with **Markdown**, take a look at some **Markdown Basics** (<a href="https://www.google.com/#newwindow=1&safe=off&q=%22Markdown+Basics%22+tutorials" target="_blank">search for it on Google</a>), there are great tutorials available). Just remember Github's GFM has extra features that are tailored for its own needs, such as: pull request integration, SHA-1 Conversion (see below), task lists and more.
+An important remark for anyone writing documentation inside Github projects: the GFM render also accepts a handfull of **HTML TAGS** and render them properly, but not before **aggressively sanitize** them to remove things such as: **scripts tags**, (_some_) **inline-styles**, **classes** and **id attributes**. You can take a look at the <a href="https://github.com/rgrove/sanitize/#readme" target="_blank">sanitization filter</a> for the full whitelisted HTML.
 
-An important remark for anyone writing documentation inside Github projects: the GFM render recognizes a handfull of **HTML TAGS** and render them properly, but not before **aggressively sanitize** them, removing things such as: scripts tags, (some) inline-styles, classes and id attributes. You can take a look at the <a href="https://github.com/rgrove/sanitize/#readme" target="_blank">sanitization filter</a> for the full whitelisted HTML.
+My recommendation for anyone trying to make the best out of the GFM is to fell free to use **Markdown**, **HTML Tags** or **_both_** at same time. Try it and see for yourself. Sure enough you will find situations in which **HTML Tags** will be much better fit than the equivalent **Markdown** element and vice-versa (this entire set of documents are great example of such combination).
 
-I would say you should fell free to use Markup, HTML Tags or both at same time. Try it and see for yourself. Sure enought you will find situations in which HTML TAGS will better fit than the equivalent Markdown and vice-versa.
+Express your freedom, fell free to learn from this set of documents and have a great writting experience. That's exactly _why_ I decided to make it as a set of **.md** files instead of a Wiki page.
 
-Express your freedom and have a great writting experience.
+Have fun.
+
+[**Julio Marchi ©**](mailto:jcmarchi@gmail.com) &nbsp; 😎 <br />
+<sup>Twitter: <a href="https://twitter.com/MrMarchi">@MrMarchi</a></sup>
+
 
 ## General Index
 
