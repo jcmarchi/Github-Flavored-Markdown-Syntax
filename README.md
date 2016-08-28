@@ -22,25 +22,30 @@ Have fun.
 ## General Index
 
 ### Text Formatting
-* Line Breaks (concept)
+* [Line Breaks and Paragraphs](Text-Formatting_Paragraphs.md)
 * [Headers](Text-Formatting_Headers.md)
-* Content Elements (Bold, Italic, Strikethrough, etc.)
-* Unicode Characters and HTML entities
+* [Content Elements (Bold, Italic, Strikethrough, etc.)](Text-Formatting_Content.md)
+* [Unicode Characters and HTML entities](Text-Formatting_Unicode.md)
 
 ### Blocks Structures
-* Lists (Ordered and Unordered)
-* Tables
-* Horizontal Rule
+* [Lists (Ordered and Unordered)](Blocks-Structures_Lists.md)
+* [Tables](Blocks-Structures_Tables.md)
+* [Horizontal Rule](Blocks-Structures_HorizontalRules.md)
 
 ### Links & References
-* Images
-* Links & Anchors
-* Videos
+* [Images](Links-and-References_Images.md)
+* [Links & Anchors](Links-and-References_Links.md)
+* [Videos](Links-and-References_Videos.md)
 
 ### Advanced or Exclusive GFM Formatting
-* Code Syntax Highlighting
-* Task Lists
-* SHA references
-* Issue references within a repository
-* Emoji
+* [Code Syntax Highlighting](Advanced-Exclusive_Highlight.md)
+* [Task Lists](Advanced-Exclusive_TaskList.md)
+* [SHA references](Advanced-Exclusive_SHA.md)
+* [Issue references within a repository](Advanced-Exclusive_Issues.md)
+* [Emoji](Advanced-Exclusive_Emoji.md)
 
+- - - 
+<sup>
+Except where otherwise noted, content on this document is licensed under a <b>Creative Commons Attribution 4.0</b> International license.<br />
+Provided by <b>Julio Marchi</b>
+</sup>
