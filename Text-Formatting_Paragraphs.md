@@ -37,7 +37,7 @@ paragraph!**
 another paragraph!**
 
 *IMPORTANT:*  
-The _formatting elements_ won't translate from one paragraph to another. It means if you add a _paragraph break_ without any regard to the _formatting elements_, you will get a "_broken_" **Markdown** result.
+Most _formatting elements_ won't translate from one paragraph to another. It means if you add a _paragraph break_ without any regarding to the _formatting elements_, you may get a "_broken_" **Markdown** result.
 
 Here is an example:
 
@@ -47,7 +47,7 @@ Here is an example:
      This is another paragraph 
      that should also be in bold!**
      
-You will get:
+You will get it _broken_ like this:
 
 **This is one single paragraph 
 in bold! 
@@ -55,7 +55,9 @@ in bold!
 This is another paragraph 
 that should also be in bold!**
      
-It happened because the bold element \*\* was not rendered, thus it got expopsed. To prevent such problems, make sure you properly close the _formatting elements_ if they are to existe allthe way to the end of a paragraph. Example:
+As you can see, the bold element (\*\*) was not rendered, thus it got exposed. To prevent such problem, make sure you properly close the _formatting elements_ if they are to existe all the way to the end of the paragraph.
+
+Here how it should be done:
 
      **This is one single paragraph 
      in bold!**
@@ -63,16 +65,16 @@ It happened because the bold element \*\* was not rendered, thus it got expopsed
      This is another paragraph 
      that should also be in bold!**
      
-You will get:
+So you can get it right:
 
 **This is one single paragraph 
-in bold**
+in bold!**
      
 This is another paragraph 
 that should also be in bold!**
 
 
-**Notice:** Subsequent _blak lines_ will not render as multiple blank lines, resulting in one single blank line.
+**Notice:** Multiple _blak lines_ will render as a single blank line (like HTML).
 
 - - -
 
