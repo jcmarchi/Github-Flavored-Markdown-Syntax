@@ -4,7 +4,7 @@ Primarily used to visually and semantically identify contents and defined contex
 
 The **Header Markdow** character (<code>**#**</code>) must be the first element of the line, otherwise it will simply render the _hash_ symbol (<code>**#**</code>). As result, it is not possible to use it inside a paragraphs to obtain the same visual format.
 
-If, for any reason, your text required the _hash_ symbol (<code>**#**</code>) appearing as the first character of a line, it is possible to _escape_ it by preceding it with the _escape_ character <code>**\**</code>. E.g.: <code>\\# Will not render as a header element</code>.
+If, for any reason, your text required the _hash_ symbol (<code>**#**</code>) appearing as the first character of a line, it is possible to _escape_ it by preceding it with the _backslash-escape_ character <code>**\**</code>. E.g.: <code>\\# Will not render as a header element</code>.
 
 
 <table width="100%" valign="top" style='border: none;'>
