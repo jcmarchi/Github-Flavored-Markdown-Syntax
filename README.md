@@ -14,7 +14,7 @@ I would say you should fell free to use Markup, HTML Tags or both at same time. 
 
 Express your freedom and have a great writting experience.
 
-## General Index
+## General Index [](#TOC)
 
 ### Text Formatting
 * Line Breaks (concept)
