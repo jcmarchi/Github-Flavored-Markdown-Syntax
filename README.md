@@ -17,36 +17,30 @@ Have fun.
 [**Julio Marchi ©**](mailto:jcmarchi@gmail.com) &nbsp; 😎 <br />
 <sup>Twitter: <a href="https://twitter.com/MrMarchi">@MrMarchi</a></sup>
 
+- - - 
 
 ## General Index
 
 ### Text Formatting
 * Line Breaks (concept)
 * [Headers](Text-Formatting_Headers.md)
-* Emphasis
- * Bold
- * Italic
-* Strikethrough
-* Highlighting
-
+* Content Elements (Bold, Italic, Strikethrough, etc.)
+* Unicode Characters and HTML entities
 
 ### Blocks Structures
-* Lists
- * Unordered
- * Ordered
+* Lists (Ordered and Unordered)
 * Tables
 * Horizontal Rule
 
-
 ### Links & References
 * Images
-* URL
-
+* Links & Anchors
+* Videos
 
 ### Advanced or Exclusive GFM Formatting
-* Inline code
-* Syntax highlighting
+* Code Syntax Highlighting
 * Task Lists
 * SHA references
 * Issue references within a repository
 * Emoji
+
