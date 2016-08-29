@@ -80,8 +80,10 @@ that should also be in bold!**
 
 ### Understanding Line Breaks
 
+|sdsdsd|
+|------|
 
-The paragraph end, however, can be a little bit more _tricky_ to visualize. At Github, based on the description above, a paragraph is considered terminated when it is immediately followed by a "_blank line_", or by a line beginning with a **Markdown character**.
+As we At Github, based on the description above, a paragraph is considered terminated when it is immediately followed by a "_blank line_", or by a line beginning with a **Markdown character**.
 
 , or when it has two blank spaces as last characters (standard **Markdown**).
 
@@ -96,10 +98,11 @@ If your paragraph is written like this:
 
 It shour render like this:
 
-**Line 1** (terminated with no spaces)
+|**Line 1** (terminated with no spaces)
 **Line 2** (terminated with _two white-space_ characters)  
 **Line 3** (terminated with no spaces)
-**Line 4** (terminated with no spaces)
+**Line 4** (terminated with no spaces)|
+|-----|
 
 Notice how a _line break_ was enforced in between the lines **2** and **3**. It was result of the two _blank space_  characters added to the end of the lines **2**. 
 
