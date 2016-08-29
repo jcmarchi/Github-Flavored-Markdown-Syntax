@@ -105,70 +105,61 @@ Originally, Github didn't recognize this feature (defined by the **Markdown Stan
 
 **Important:** An empty paragraph terinated in two _blank space_ characters will stil be rendered as a _blank line_ because it "_looks like a blank line_" (se description of paragraph above).
 
-
 - - - 
 
-The implication of the "one or more consecutive lines of text" rule is that Markdown supports "hard-wrapped" text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable Type's "Convert Line Breaks" option) which translate every line break character in a paragraph into a <br /> tag.
+### Multiple _Blank Lines_ in Github Markdown
 
-When you do want to insert a <br /> break tag using Markdown, you end a line with two or more spaces, then type return.
+After reading and experiencing with paragraphs and _line breaks_ a common question rises: _How to create more than one subsequent **blank line** in between paragraphs?_
 
-Yes, this takes a tad more effort to create a <br />, but a simplistic "every line break is a <br />" rule wouldn't work for Markdown. Markdown's email-style blockquoting and multi-paragraph list items work best -- and look better -- when you format them with hard breaks.
+Well, without _tricking_ the GFM it is not exactly doable, but you can always try those options:
 
-      
+1. Use the HTML Tag <code>&lt;br \\&gt;</code> to force a _line break_ 
+2. Use the _blank space_" character (<code>\&nbsp;</code>) to force a _blank line_, one per line, and having the line terminated by _two blank spaces_,.
+ 
+Here some examples:
 
-fvafvbadfsv
-adfbadfvb
+#### Option 1: Using <code>&lt;br \\&gt;</code> to force a _line break_:
 
-   dsfvbadfvadfvb
-   adfvbadfv
-   
-      asdfvafdsv
-      adsfvafdsv
+        Line 1
+        
+        &nbsp;  
+        &nbsp;  
+        &nbsp;  
+        Line 2
+        &nbsp;  
+        Line 3
 
+Will render as:
 
-Currently GitLab renders line-breaks in markdown files as line-breaks. We propose to change this behaviour to conform to the markdown specification and only render line-breaks when you end a line with two or more spaces. Paragraphs will continue to be rendered as before; when the text is separated by one or more blank lines.
+Line 1
 
-The above change will ensure that markdown files in projects will look the way you expect them to look. But GitLab has just one markdown engine to render GitLab Flavored Markdown. Since descriptions & comments in both issues & merge requests also use GitLab Flavored Markdown they will also show the new behaviour. We think this is preferable above introducing different behaviour and rendering code for different cases. Please let us know what you think.
+&nbsp;  
+&nbsp;  
+&nbsp;  
+Line 2
+&nbsp;  
+Line 3
 
+#### Option 2: Using the _blank space_" character (<code>\&nbsp;</code>):
 
+    Line 1
+    
+    <br /><br /><br />
+    Line 2
+    <br />
+    Line 3
 
+Will render as:
 
-Traditional Markdown requires a two-space to generate line breaks, while GFM line breaks are automatically generated wherever you add a line break on your text. 
+Line 1
 
-If you press <code>enter</code>
+<br /><br /><br />
+Line 2
+<br />
+Line 3
 
+Notice that both examples above have their first _blank line_ as a real _blank line_. Without it you will always have the first _force blank line_ added to the end of the previous line (unless if it is terminated with _two blank spaces_). Well, you got it! Right? :)
 
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a separate paragraph.
-
-This line is also begins a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the same paragraph.
-
-(Technical note: Markdown Here uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
-Description
-
-
-<table width="100%" valign="top" style='border: none;'>
-<thead>
-<tr>
-  <td width="20%" nowrap>Markdown</td>
-  <td width="20%" nowrap>Will Render As</td>
-  <td width="0%">Notes & References</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td width="20%" valign="top" nowrap><code>Markdown</code></td>
-  <td width="20%" valign="top" nowrap>Sample</td>
-  <td width="0%" valign="top">
-      Notes about the Markdown (if any)
-  </td>
-</tr>
-</tbody>
-</table>
-
-Reference Notes (if any)
 
 [🔙 Back to the **General Index**](README.md#general-index)
 
