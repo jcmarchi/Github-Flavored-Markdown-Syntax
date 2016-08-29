@@ -62,17 +62,16 @@ Here how it is done right:
      **This is one single paragraph 
      in bold!**
      
-     This is another paragraph 
+     **This is another paragraph 
      that should also be in bold!**
      
 So it can render correctly:
 
 **This is one single paragraph 
 in bold!**
-     
-This is another paragraph 
-that should also be in bold!**
 
+**This is another paragraph 
+that should also be in bold!**
 
 **Notice:** Multiple _blak lines_ will render as a single blank line (like HTML).
 
@@ -80,49 +79,34 @@ that should also be in bold!**
 
 ### Understanding Line Breaks
 
-|sdsdsd|
-|------|
+Different from a paragraph, a _line break_ should simply do what it says: "**_break the line_**", not the paragraph.
 
-As we At Github, based on the description above, a paragraph is considered terminated when it is immediately followed by a "_blank line_", or by a line beginning with a **Markdown character**.
+If visually it can be identified by the lack of space (_blank lines_) in between the lines, semantically it means a lot more, allowing electronic readers, parsers and conversion tools to better understand where a paragraph begin and end.
+  
+This concept can be confused, so lets try some examples for a better understanding.
 
-, or when it has two blank spaces as last characters (standard **Markdown**).
-
-This concept can confuse some people, thus lets explore it a bit for a better undetstanding.
-
-If your paragraph is written like this:
+If your write a multi-line paragraph like this:
 
     **Line 1** (terminated with no spaces)
     **Line 2** (terminated with _two white-space_ characters)  
     **Line 3** (terminated with no spaces)
     **Line 4** (terminated with no spaces)
 
-It shour render like this:
+It will render like this:
 
-|**Line 1** (terminated with no spaces)
+**Line 1** (terminated with no spaces)
 **Line 2** (terminated with _two white-space_ characters)  
 **Line 3** (terminated with no spaces)
-**Line 4** (terminated with no spaces)|
-|-----|
+**Line 4** (terminated with no spaces)
 
-Notice how a _line break_ was enforced in between the lines **2** and **3**. It was result of the two _blank space_  characters added to the end of the lines **2**. 
+Notice how a _line break_ was **ONLY** enforced in between the lines **2** and **3**, despite of how you actually wrote it. The _line breaker_ enforcer are the two _blank space_ characters that exist at the end of the lines **2**. 
 
-Originally Github didn't recognize this feature (which was defined in the **Markdown Standard**), but support for it has been added so Github would recognize and properly render _Markdown files_ created by other editors. 
+Originally, Github didn't recognize this feature (defined by the **Markdown Standard**), but support for it has been added so Github would recognize and properly render _Markdown files_ created by other editors. I agree a better choice could have been made other than something "invisible" to the eye, but it is what it is...
 
-At Github _line break_ and _new paragraph_ concepts can be deceiving, but it is important to know the semantical differences if you want to write proper documentation. You can always separate two paragraphs in Github by adding a _blank line_ in between them, knowingly that those ARE to be interpreted as **two separated paragraphs**. I fyou want, instead, keep the semantical interpretation of a paragraph but break lines inside it, then you must terminater the line(s) with  _two white-space_ characters to enforce a correct _line break_.
-
-Technically is the same as use <code>&lt;p&gt;</code> and <code>&lt;p \\&gt;</code> in HTML.
-
-fundamentally to get the same visual effect the _two white-space_ characters at the end of the paragraph 
+**Important:** An empty paragraph terinated in two _blank space_ characters will stil be rendered as a _blank line_ because it "_looks like a blank line_" (se description of paragraph above).
 
 
-
-
-Github itself will render a _line break_ in a paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.
-
-
-
-
-.) Normal paragraphs should not be indented with spaces or tabs.
+- - - 
 
 The implication of the "one or more consecutive lines of text" rule is that Markdown supports "hard-wrapped" text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable Type's "Convert Line Breaks" option) which translate every line break character in a paragraph into a <br /> tag.
 
