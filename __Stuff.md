@@ -11,8 +11,8 @@
 |:green_book:|`:green_book:`|
 |:orange_book:|`:orange_book:`|
 |:closed_book:|`:closed_book:`|
-|:notebook:|`:notebook:`|
 |:ledger:|`:ledger:`|
+|:notebook:|`:notebook:`|
 |:notebook_with_decorative_cover:|`:notebook_with_decorative_cover:`|
 | | |
 |:file_folder:|`:file_folder:`|
