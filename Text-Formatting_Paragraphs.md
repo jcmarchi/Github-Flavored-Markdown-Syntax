@@ -116,9 +116,27 @@ Well, without _tricking_ the GFM it is not exactly doable, but you can always tr
 1. Use the HTML Tag <code>&lt;br \\&gt;</code> to force a _line break_ 
 2. Use the _blank space_" character (<code>\&nbsp;</code>) to force a _blank line_, one per line, and having the line terminated by _two blank spaces_,.
  
-Here some examples:
+Here the examples (pay good attention to it):
 
 #### Option 1: Using <code>&lt;br \\&gt;</code> to force a _line break_:
+
+    Line 1
+    
+    <br /><br /><br />
+    Line 2
+    <br />
+    Line 3
+
+Will render as:
+
+Line 1
+
+<br /><br /><br />
+Line 2
+<br />
+Line 3
+
+#### Option 2: Using the _blank space_" character (<code>\&nbsp;</code>):
 
         Line 1
         
@@ -138,24 +156,6 @@ Line 1
 &nbsp;  
 Line 2
 &nbsp;  
-Line 3
-
-#### Option 2: Using the _blank space_" character (<code>\&nbsp;</code>):
-
-    Line 1
-    
-    <br /><br /><br />
-    Line 2
-    <br />
-    Line 3
-
-Will render as:
-
-Line 1
-
-<br /><br /><br />
-Line 2
-<br />
 Line 3
 
 Notice that both examples above have their first _blank line_ as a real _blank line_. Without it you will always have the first _force blank line_ added to the end of the previous line (unless if it is terminated with _two blank spaces_). Well, you got it! Right? :)
