@@ -1,5 +1,6 @@
 ## Text Formatting - Headers
 
+<kbd>CTRL</kbd>+<kbd>Z</kbd>
 Primarily used to visually and semantically identify contents and defined contexts, such as **titles**, **topics** and **sub-topics**.
 
 The **Header Markdow** character (<code>**#**</code>) must be the first element of the line, otherwise it will simply render the _hash_ symbol (<code>**#**</code>). As result, it is not possible to use it inside a paragraphs to obtain the same visual format.
@@ -67,10 +68,10 @@ If, for any reason, your text required the _hash_ symbol (<code>**#**</code>) ap
 
 As an interesting remark, you can use the equivalent **Markdown Syntax** of <code># Heading 1</code> and/or <code>## Heading 2</code> to create [Horizontal Rules](Blocks-Structures_HorizontalRule.md).
 
-[🔙 Back to the **General Index**](README.md#general-index)
+[:arrow_left: Back to the **General Index**](README.md#general-index)
 
 - - - 
 <sup>
 <i>Except where otherwise noted, content on this document is licensed under a <b>Creative Commons Attribution 4.0</b> International license</i>.<br />
-Provided by <b>Julio Marchi</b>
+Provided by <b>Julio Marchi <sup>©</sup></b>
 </sup>
