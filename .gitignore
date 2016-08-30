@@ -1,0 +1,3 @@
+# Traditional files to ignore
+.directory
+.composer.lock
